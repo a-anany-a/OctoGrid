@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octogrid - Empowering Smarter Grids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #234E52;
+            background-color: #F0F9F9;
+        }
+        header {
+            background: linear-gradient(135deg, #2C7A7B, #81E6D9);
+            color: #ffffff;
+            padding: 4em 2em;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            margin-bottom: 0.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #234E52;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5em 2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #81E6D9;
+            color: #234E52;
+        }
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2em;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            background-color: #234E52;
+            color: #ffffff;
+            padding: 2em;
+        }
+        footer a {
+            color: #81E6D9;
+            text-decoration: none;
+        }
+        .logo {
+            display: block;
+            margin: 2em auto;
+            max-width: 180px;
+        }
+        h2 {
+            color: #234E52;
+            border-bottom: 3px solid #81E6D9;
+            display: inline-block;
+            padding-bottom: 0.3em;
+        }
+        .team-member {
+            margin: 1.5em 0;
+        }
+        .team-member h3 {
+            color: #2C7A7B;
+        }
+        ul {
+            padding-left: 1.5em;
+            list-style: disc;
+            color: #234E52;
+        }
+        .cta {
+            display: block;
+            margin: 2em auto;
+            text-align: center;
+            padding: 1em 2em;
+            background-color: #2C7A7B;
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #81E6D9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Octogrid</h1>
+        <p>Empowering Smarter Grids for a Sustainable Future</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#team">Meet the Team</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Octogrid</h2>
+            <img src="eNno-1.0.0/logo.png" alt="Octogrid Logo" class="logo">
+            <h3>What We Do</h3>
+            <p>Octogrid leverages cutting-edge technology to optimize energy systems for efficiency and sustainability.</p>
+            <h3>Our Vision</h3>
+            <p>A future where smart energy solutions make cooling affordable and accessible for all, fostering healthier homes, lowering energy costs, and creating a more sustainable, climate-resilient Singapore.</p>
+            <h3>Our Mission</h3>
+            <p>Making cooling accessible by optimizing air conditioning for energy market prices—reducing costs and boosting sustainability without compromising comfort.</p>
+            <a href="#contact" class="cta">Get in Touch</a>
+        </section>
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+                <h3>CEO: Andreas Kuster</h3>
+                <p>Andreas brings years of experience in energy technology and business leadership.</p>
+            </div>
+            <div class="team-member">
+                <h3>CMO: Ananya Goyal</h3>
+                <p>Ananya is a visionary marketing expert with a passion for sustainable solutions.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Octogrid. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
